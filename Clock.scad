@@ -43,8 +43,8 @@ module holder(d = 45)
         
     translate([0, 0, -h / 2 + 1.4/2])
     {
-        disk(12);
-        disk(20);
+        disk(12, h = 1.4);
+        disk(20, h = 1.4);
     }
 }
 
@@ -71,9 +71,9 @@ difference()
     translate([0, 0, 10/2])
     cylinder(h = 20, d = 2, center = true);
     
-    translate([0, 0, -4/2])
+    translate([0, 0, -(4 - 0.8 +0.1)/2])
     {
-        disk(12, t = 0.8, h = 0.6);
-        disk(20, t = 0.8, h = 0.6);
+        disk(12, t = 0.7, h = 0.8);
+        disk(20, t = 0.7, h = 0.8);
     }
 }
