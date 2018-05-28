@@ -1,6 +1,6 @@
 $fn = 100;
 
-module holder(d = 50)
+module holder(d = 45)
 {    
     w = 24;
     l = 45;
@@ -11,8 +11,8 @@ module holder(d = 50)
     r = sqrt(a*a + w*w/4);
     theta = atan(0.4*w/a);
     
-    translate([0, 0, 5 - h/2])
-    cylinder(h = 10, d = 10, center = true);
+    translate([0, 0, 6/2 - h/2])
+    cylinder(h = 6, d = 10, center = true);
     
     difference()
     {
@@ -46,7 +46,7 @@ module holder(d = 50)
     translate([0, 0, -h / 2 + 0.5])
     {
         disk(12);
-        disk(16);
+        disk(20);
     }
 }
 
@@ -75,7 +75,7 @@ difference()
     
     translate([0, 0, -4/2])
     {
-        disk(12, t = 0.5, h = 0.4);
-        disk(16, t = 0.5, h = 0.4);
+        disk(12, t = 0.8, h = 0.6);
+        disk(20, t = 0.8, h = 0.6);
     }
 }
