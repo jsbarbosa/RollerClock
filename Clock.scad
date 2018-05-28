@@ -40,17 +40,15 @@ module holder(d = 45)
             #cube([w, l, h - 0.8], center = true);
         }
     }
-    
-    t = 2;
-    
-    translate([0, 0, -h / 2 + 0.5])
+        
+    translate([0, 0, -h / 2 + 1.4/2])
     {
         disk(12);
         disk(20);
     }
 }
 
-module disk(r, t = 2, h = 1)
+module disk(r, t = 2, h = 1.4)
 {
     difference()
     {
